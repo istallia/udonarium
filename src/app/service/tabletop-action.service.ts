@@ -128,12 +128,12 @@ export class TabletopActionService {
     let gameTable = new GameTable('gameTable');
     let testBgFile: ImageFile = null;
     let bgFileContext = ImageFile.createEmpty('testTableBackgroundImage_image').toContext();
-    bgFileContext.url = './assets/images/BG10a_80.jpg';
+    bgFileContext.url = './assets/images/OCE_BG.png';
     testBgFile = ImageStorage.instance.add(bgFileContext);
     gameTable.name = '最初のテーブル';
     gameTable.imageIdentifier = testBgFile.identifier;
-    gameTable.width = 20;
-    gameTable.height = 15;
+    gameTable.width = 27;
+    gameTable.height = 22;
     gameTable.initialize();
 
     tableSelecter.viewTableIdentifier = gameTable.identifier;

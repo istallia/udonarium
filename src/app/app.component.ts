@@ -91,8 +91,11 @@ export class AppComponent implements AfterViewInit, OnDestroy {
     let soundEffect: SoundEffect = new SoundEffect('SoundEffect');
     soundEffect.initialize();
 
-    ChatTabList.instance.addChatTab('メインタブ', 'MainTab');
-    ChatTabList.instance.addChatTab('サブタブ', 'SubTab');
+    // ChatTabList.instance.addChatTab('メインタブ', 'MainTab');
+    // ChatTabList.instance.addChatTab('サブタブ', 'SubTab');
+    ChatTabList.instance.addChatTab('メイン', 'MainTab');
+    ChatTabList.instance.addChatTab('情報', 'InfoTab');
+    ChatTabList.instance.addChatTab('雑談', 'ChatTab');
 
     let fileContext = ImageFile.createEmpty('none_icon').toContext();
     fileContext.url = './assets/images/ic_account_circle_black_24dp_2x.png';
